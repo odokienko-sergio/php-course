@@ -1,0 +1,37 @@
+{
+    "name": "odokienko/anagrams",
+    "description": "anagrmas function",
+    "autoload": {
+        "psr-4": {
+            "ReverseText\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "authors": [
+        {
+            "name": "Serhii Odokienko"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=7.1",
+        "ext-spl": "*",
+        "predis/predis": "v2.x-dev",
+        "cache/redis-adapter": "^1.2",
+        "symfony/cache": "6.4.x-dev",
+        "cache/memcache-adapter": "^1.2",
+        "cache/memcached-adapter": "^1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.6.x-dev",
+        "phpunit/php-code-coverage": "9.2.x-dev"
+    },
+    "config": {
+        "disable-tls": true,
+        "secure-http": false
+    }
+}

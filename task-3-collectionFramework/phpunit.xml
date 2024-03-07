@@ -1,0 +1,9 @@
+<phpunit>
+    <!-- ... other configurations ... -->
+
+    <coverage>
+        <include>
+            <directory>src/</directory>
+        </include>
+    </coverage>
+</phpunit>
